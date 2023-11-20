@@ -1,6 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace MySchoolarAppForAndroid
 {
@@ -10,7 +8,7 @@ namespace MySchoolarAppForAndroid
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new StartPage1());
         }
 
         protected override void OnStart()

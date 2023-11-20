@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MySchoolarAppForAndroid.TimerPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                x:Name="time_value"
+                HorizontalOptions="CenterAndExpand"
+                Text="Timer Page"
+                VerticalOptions="CenterAndExpand" />
+
+            <Label
+                x:Name="timer_start"
+                BackgroundColor="AliceBlue"
+                FontFamily="Comic Sans MS"
+                FontSize="Medium"
+                HorizontalOptions="CenterAndExpand"
+                Text="Start"
+                VerticalOptions="CenterAndExpand">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Button
+                x:Name="btn_tagasi"
+                BackgroundColor="DarkOliveGreen"
+                Clicked="btn_tagasi_Clicked"
+                FontSize="Large"
+                Text="Tagasi" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
