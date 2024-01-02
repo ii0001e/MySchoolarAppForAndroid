@@ -8,8 +8,10 @@ namespace MySchoolarAppForAndroid
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class StartPage1 : ContentPage
     {
-        List<ContentPage> pages = new List<ContentPage>() { new EntryPage(), new BoxView_Page(), new TimerPage(), new EntryPage(), new FrameGridPage(), new Image_Page(), new HoroscopeMenu() };
-        List<string> tekst = new List<string> { "Ava Entry leht", "Ava BoxView leht", "Ava Timer leht", "Ava StepperSlider leht", "Ava Grid leht", "Ava Image leht", "Ava Horoscope menu" };
+        List<ContentPage> pages = new List<ContentPage>() { new EntryPage(), new BoxView_Page(), new TimerPage(), new EntryPage(),
+            new FrameGridPage(), new Image_Page(), new HoroscopeMenu(), new PukkerPage(), new TablePage() };
+        List<string> tekst = new List<string> { "Ava Entry leht", "Ava BoxView leht",
+            "Ava Timer leht", "Ava StepperSlider leht", "Ava Grid leht", "Ava Image leht", "Ava Horoscope menu", "Ava Pikker leht", "Ava TablePage" };
         StackLayout st;
         public StartPage1()
         {
